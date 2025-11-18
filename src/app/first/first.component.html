@@ -1,6 +1,6 @@
 
 
-
+<input type="text" [(ngModel)]="searchname" placeholder="Search by name">
 <table border="1">
   <tr>
     <th>Emp ID</th>
@@ -8,15 +8,17 @@
     <th>Emp Mail</th>
     <th>Operation</th>
   </tr>
-  <tr *ngFor="let db of database" tables>
-    <td>{{db.id}}</td>
-    <td>  <a [routerLink]="['/storage', db.id]">{{ db.name }}</a> </td>
-    <td>{{db.email}}</td>
-    <td>
-      <button id="edit" (click)="editer(db)">Edit</button>
-      <button id="del" (click)="del(db)">Delete</button>
-    </td>
-  </tr>
+  <ng-container *ngFor="let db of database">
+    <tr *ngIf="filterCondition(db)">
+      <td>{{db.id}}</td>
+      <td>  <a [routerLink]="['/storage', db.id]">{{ db.name }}</a> </td>
+      <td>{{db.email}}</td>
+      <td>
+        <button id="edit" (click)="editer(db)">Edit</button>
+        <button id="del" (click)="del(db)">Delete</button>
+      </td>
+    </tr>
+  </ng-container>
 
 
 </table><br>

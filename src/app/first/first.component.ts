@@ -13,6 +13,7 @@ export class FirstComponent {
   differ = false;
   editId: number | null = null;
   editUserData: any | null = null;
+  searchname: string = '';
 
   constructor(private service: ShareService, private router: Router) {
     this.recive();
@@ -33,4 +34,7 @@ export class FirstComponent {
   add() {
     this.router.navigate(['/form'])
   }
-}
+
+  filterCondition(item: any): boolean {
+    return item.name.toLowerCase().includes(this.searchname.toLowerCase());
+  }}

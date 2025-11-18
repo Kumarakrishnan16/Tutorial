@@ -7,20 +7,23 @@ import { HttpClientModule } from '@angular/common/http';
 import { StorageComponent } from './storage/storage.component';
 import { FirstComponent } from './first/first.component';
 import { FormsComponent } from './forms/forms.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     StorageComponent,
     FirstComponent,
-    FormsComponent
+    FormsComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([]) 
   ],
