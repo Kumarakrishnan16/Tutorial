@@ -68,4 +68,8 @@ export class FormsComponent {
       this.router.navigate(['/'])
     })
   }
+
+  back(){
+    this.router.navigate(['/'])
+  }
 }
