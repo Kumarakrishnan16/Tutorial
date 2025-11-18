@@ -9,7 +9,6 @@ import { FirstComponent } from './first/first.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,7 @@ import { SearchPipe } from './search.pipe';
     StorageComponent,
     FirstComponent,
     FormsComponent,
-    SearchPipe
+
   ],
   imports: [
     BrowserModule,

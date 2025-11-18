@@ -1,6 +1,6 @@
 
 
-<input type="text" [(ngModel)]="searchname" placeholder="Search by name">
+<input type="text" [(ngModel)]="searchname" placeholder="Search by Name">
 <table border="1">
   <tr>
     <th>Emp ID</th>
@@ -9,7 +9,7 @@
     <th>Operation</th>
   </tr>
   <ng-container *ngFor="let db of database">
-    <tr *ngIf="filterCondition(db)">
+    <tr *ngIf="filteruser(db)">
       <td>{{db.id}}</td>
       <td>  <a [routerLink]="['/storage', db.id]">{{ db.name }}</a> </td>
       <td>{{db.email}}</td>

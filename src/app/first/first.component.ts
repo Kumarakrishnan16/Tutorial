@@ -35,6 +35,6 @@ export class FirstComponent {
     this.router.navigate(['/form'])
   }
 
-  filterCondition(item: any): boolean {
+  filteruser(item: any): boolean {
     return item.name.toLowerCase().includes(this.searchname.toLowerCase());
   }}
