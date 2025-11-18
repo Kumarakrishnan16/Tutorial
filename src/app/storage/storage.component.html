@@ -1,0 +1,26 @@
+<div>
+    <h3>Records of Employee</h3>
+<table border="1">
+    <tr>
+        <th>Emp id</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>City</th>
+    </tr>
+    <tr *ngIf="db">
+        <td>{{db.id}}</td>
+        <td>{{db.name}}</td>
+        <td>{{db.role}}</td>
+        <td>{{db.email}}</td>
+        <td>{{db.address}}</td>
+        <td>{{db.city}}</td>
+    </tr>
+</table>
+</div>
+
+
+
+
+

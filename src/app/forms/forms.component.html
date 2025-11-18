@@ -1,0 +1,16 @@
+<div>
+    <h3>Employee Register Form</h3>
+    <form [formGroup]="myform">
+        <label>Emp Name:</label>
+        <input type="text" formControlName="name"><br><br>
+        <label>Emp email:</label>
+        <input type="text" formControlName="email"><br><br>
+        <label>Emp Role:</label>
+        <input type="text" formControlName="role"><br><br>
+        <label>Emp Address:</label>
+        <input type="text" formControlName="address"><br><br>
+        <label>Emp City:</label>
+        <input type="text" formControlName="city"><br><br>
+        <button (click)="add()">{{ (double)? 'submit' : 'Update'}}</button>
+    </form>
+</div>

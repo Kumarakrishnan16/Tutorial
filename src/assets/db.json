@@ -1,0 +1,28 @@
+{
+  "Database": [
+    {
+      "id": "1",
+      "name": "joshva",
+      "email": "john.doe@example.com",
+      "role": "admin",
+      "address": "123 Main St, Anytown, chennai",
+      "city": "chennai"
+    },
+    {
+      "name": "mani",
+      "email": "alice@example.com",
+      "role": "senior Developer",
+      "address": "456 Main St, Anytown, bangalore",
+      "city": "bangalore",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "karthi",
+      "email": "kar@gmail.com",
+      "role": "iot",
+      "address": "sdfghjkl",
+      "city": "chennai"
+    }
+  ]
+}

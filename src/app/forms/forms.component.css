@@ -1,0 +1,20 @@
+div{
+    width: 400px;
+    border: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form{
+    background-color: skyblue;
+    padding: 10px;
+}
+button{
+    background-color: rgb(106, 147, 25);
+    border-style:double ;
+    color: white;
+}
+label{
+    margin-right: 5px;
+}
+h3{
+    margin-left: 4px;
+}
